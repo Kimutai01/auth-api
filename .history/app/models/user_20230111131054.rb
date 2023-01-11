@@ -7,7 +7,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          :jwt_authenticatable, jwt_revocation_strategy: self
 
-  def jwt_payload
+    def jwt_payload
     super.merge('foo' => 'bar')
   end
 end
