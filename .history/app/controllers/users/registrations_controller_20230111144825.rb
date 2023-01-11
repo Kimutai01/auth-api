@@ -18,5 +18,4 @@ class Users::RegistrationsController < Devise::RegistrationsController
         errors: resource.errors.full_messages
       }
     end
-  end
 end

@@ -17,6 +17,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
         status: {code: 500, message: "Signed up failed"},
         errors: resource.errors.full_messages
       }
+      
     end
-  end
 end

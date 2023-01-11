@@ -15,8 +15,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     else
       render json {
         status: {code: 500, message: "Signed up failed"},
-        errors: resource.errors.full_messages
+        data: resource.errors
       }
     end
-  end
 end
